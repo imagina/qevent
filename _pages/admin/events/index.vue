@@ -163,11 +163,19 @@ export default {
               image: event.mediaFiles.mainimage.mediumThumb,
               date: event.date,
               mainDetails: [
-                {title: this.$tr('isite.cms.label.category'), icon: 'fas fa-calendar-check', value: event.category.title},
+                {
+                  title: this.$tr('isite.cms.label.category'),
+                  icon: 'fas fa-calendar-check',
+                  value: event.category.title
+                },
                 {title: this.$tr('isite.cms.label.department'), icon: 'fas fa-users', value: event.department.title},
               ],
               extraDetails: [
-                {title: this.$tr('isite.cms.label.category'), icon: 'fas fa-calendar-check', value: event.category.title},
+                {
+                  title: this.$tr('isite.cms.label.category'),
+                  icon: 'fas fa-calendar-check',
+                  value: event.category.title
+                },
                 {title: this.$tr('isite.cms.label.department'), icon: 'fas fa-users', value: event.department.title},
                 {value: event.description}
               ]
@@ -176,7 +184,9 @@ export default {
           //Response
           resolve(response.data)
         }).catch(error => {
-          resolve(true)
+          this.$apiResponse.handleError(error, () => {
+            resolve(true)
+          })
         })
       })
     },
@@ -224,7 +234,9 @@ export default {
           //Response
           resolve(response.data)
         }).then(error => {
-          resolve(false)
+          this.$apiResponse.handleError(error, () => {
+            resolve(false)
+          })
         })
       })
     }
