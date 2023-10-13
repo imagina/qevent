@@ -4,7 +4,7 @@ const pages = config('pages') // Get Pages from config
 export default [
   {
     title: 'ievent.cms.sidebar.adminGroup',
-    icon: 'far fa-calendar',
+    icon: 'fa-light fa-calendar',
     children: [
       pages.qevent.events,
       pages.qevent.categories,
