@@ -243,7 +243,7 @@ export default {
   }
 }
 </script>
-<style lang="sass">
+<style lang="scss">
 #pageEvents
   #contentEvents
     padding 0
