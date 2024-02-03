@@ -244,7 +244,9 @@ export default {
 }
 </script>
 <style lang="scss">
-#pageEvents
-  #contentEvents
-    padding 0
+#pageEvents {
+  #contentEvents {
+    padding: 0;
+  }
+}
 </style>
