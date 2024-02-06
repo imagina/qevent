@@ -22,6 +22,7 @@
 import {colors} from 'quasar'
 //Components
 import calendar from '@imagina/qsite/_components/master/calendar'
+import eventBus from '@imagina/qsite/_plugins/eventBus'
 
 export default {
   beforeDestroy() {
@@ -77,7 +78,7 @@ export default {
         this.getData(true)
       })
       //Mobile main action
-      this.$eventBus.$emit('setMobileMainAction', {
+      eventBus.emit('setMobileMainAction', {
         icon: 'fas fa-plus',
         color: 'green',
         callBack: () => this.$refs.eventCrud.create()
