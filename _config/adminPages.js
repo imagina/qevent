@@ -5,8 +5,8 @@ export default {
     authenticated: true,
     path: '/event/events',
     name: 'qevent.admin.events',
-    page: () => import('@imagina/qevent/_pages/admin/events/index'),
-    layout: () => import('@imagina/qsite/_layouts/master.vue'),
+    page: () => import('modules/qevent/_pages/admin/events/index'),
+    layout: () => import('layouts/master.vue'),
     title: 'ievent.cms.sidebar.adminEvents',
     icon: 'fas fa-calendar-check',
     subHeader: {
@@ -19,9 +19,9 @@ export default {
     authenticated: true,
     path: '/event/categories',
     name: 'qevent.admin.categories',
-    crud: import('@imagina/qevent/_crud/categories'),
-    page: () => import('@imagina/qcrud/_pages/admin/crudPage.vue'),
-    layout: () => import('@imagina/qsite/_layouts/master.vue'),
+    crud: import('modules/qevent/_crud/categories'),
+    page: () => import('modules/qcrud/_pages/admin/crudPage.vue'),
+    layout: () => import('layouts/master.vue'),
     title: 'ievent.cms.sidebar.adminCategories',
     icon: 'fas fa-calendar-week',
     subHeader: {
