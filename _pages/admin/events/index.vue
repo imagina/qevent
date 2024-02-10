@@ -9,7 +9,7 @@
     <!--Content-->
     <div id="contentEvents" class="box relative-position">
       <!--Event crud-->
-      <crud :crud-data="import('@imagina/qevent/_crud/events')" type="form-only" ref="eventCrud"
+      <crud :crud-data="import('modules/qevent/_crud/events')" type="form-only" ref="eventCrud"
             @created="getData(true)" @updated="getData(true)"/>
       <!--Calendar-->
       <calendar :events-data="eventsData" :event-actions="eventActions"/>
@@ -21,8 +21,8 @@
 <script>
 import {colors} from 'quasar'
 //Components
-import calendar from '@imagina/qsite/_components/master/calendar'
-import eventBus from '@imagina/qsite/_plugins/eventBus'
+import calendar from 'modules/qsite/_components/master/calendar'
+import eventBus from 'modules/qsite/_plugins/eventBus'
 
 export default {
   beforeDestroy() {
