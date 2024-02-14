@@ -26,7 +26,7 @@ import { eventBus } from 'src/plugins/utils'
 
 export default {
   beforeDestroy() {
-    this.$root.$off('page.data.refresh')
+    eventBus.off('page.data.refresh')
   },
   props: {},
   components: {calendar},
@@ -73,7 +73,7 @@ export default {
       //Get data
       this.getData()
       //Listen refresh event
-      this.$root.$on('page.data.refresh', () => {
+      eventBus.on('page.data.refresh', () => {
         this.pageId = this.$uid()
         this.getData(true)
       })
