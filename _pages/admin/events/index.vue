@@ -161,7 +161,7 @@ export default {
               title: `${!parseInt(event.status) ? this.$tr('isite.cms.label.cancelled') : ''} ${event.title}`,
               color: parseInt(event.status) ? (event.category ? (event.category.options.color || '#26a69a') : '#26a69a') : '#e57373',
               icon: parseInt(event.status) ? 'fas fa-calendar' : 'fas fa-calendar-times',
-              image: event.mediaFiles.mainimage.mediumThumb,
+              image: event?.mediaFiles?.mainimage.mediumThumb,
               date: event.date,
               mainDetails: [
                 {
