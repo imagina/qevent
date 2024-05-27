@@ -2,7 +2,7 @@
   <div id="pageEvents" :key="pageId">
     <!--Page Actions-->
     <div class="box box-auto-height q-mb-md">
-      <page-actions :extra-actions="['new','search']" :title="$route.meta.title"
+      <page-actions :extra-actions="['new','search']" :title="$tr($route.meta.title)" @refresh="getData(true)"
                     @search="val => {search = val; getData()}" @new="$refs.eventCrud.create()"/>
     </div>
 
