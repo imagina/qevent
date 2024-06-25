@@ -1,7 +1,15 @@
-import layout from 'modules/qevent/_i18n/en-us/layout'
-import sidebar from 'modules/qevent/_i18n/en-us/sidebar'
-
 export default {
-  layout,
-  sidebar
+  "ievent": {
+    "cms": {
+      "sidebar": {
+        "adminGroup": "Events",
+        "adminEvents": "My Events",
+        "adminCategories": "Event Categories"
+      },
+      "newEvent": "New Event",
+      "updateEvent": "Update Event",
+      "newCategory": "New Category",
+      "updateCategory": "Update Category"
+    }
+  },
 }
