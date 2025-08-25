@@ -146,7 +146,7 @@ export default {
             props: {
               label: this.$tr('isite.cms.form.image'),
               zone: 'mainimage',
-              entity: "Modules\\Ievent\\Entities\\Event",
+              entity: "Modules\\Ievent\\Models\\Event",
               entityId: null
             }
           }

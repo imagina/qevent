@@ -119,7 +119,7 @@ export default {
             props : {
               label: this.$tr('isite.cms.form.firstImage'),
               zone: 'mainimage',
-              entity: "Modules\\Ievent\\Entities\\Category",
+              entity: "Modules\\Ievent\\Models\\Category",
               entityId: null
             }
           },
@@ -130,7 +130,7 @@ export default {
             props : {
               label: this.$tr('isite.cms.form.secondaryImage'),
               zone: 'secondaryimage',
-              entity: "Modules\\Ievent\\Entities\\Category",
+              entity: "Modules\\Ievent\\Models\\Category",
               entityId: null
             }
           }
